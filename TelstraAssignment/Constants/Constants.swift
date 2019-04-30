@@ -31,4 +31,12 @@ struct Constants {
         static let emptyString    = ""
         static let loadingText = "Loading..."
     }
+    
+    ///System Fonts
+    struct FontSizes {
+        static let systemFont17: CGFloat = 17.0
+        static let systemFont18: CGFloat = 18.0
+        static let systemFont19: CGFloat = 19.0
+        static let systemFont13: CGFloat = 13.0
+    }
 }

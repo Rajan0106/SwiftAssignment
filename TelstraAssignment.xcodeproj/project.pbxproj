@@ -20,6 +20,9 @@
 		CB8FA0DF22785202007013F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8FA0DD22785202007013F1 /* Main.storyboard */; };
 		CB8FA0E222786833007013F1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0E122786833007013F1 /* NetworkService.swift */; };
 		CB8FA0E52278689C007013F1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8FA0E42278689C007013F1 /* Alamofire.framework */; };
+		CB8FA0EA22786F50007013F1 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0E922786F50007013F1 /* LoadingIndicatorView.swift */; };
+		CB8FA0ED22787098007013F1 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0EC22787098007013F1 /* ImageProvider.swift */; };
+		CB8FA0EF227870AC007013F1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0EE227870AC007013F1 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		CB8FA0DE22785202007013F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB8FA0E122786833007013F1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CB8FA0E42278689C007013F1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CB8FA0E922786F50007013F1 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		CB8FA0EC22787098007013F1 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		CB8FA0EE227870AC007013F1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,8 @@
 		CB8FA0A4227848AC007013F1 /* TelstraAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				CB8FA0EB22787087007013F1 /* ImageDownloader */,
+				CB8FA0E722786F3F007013F1 /* ReusableViews */,
 				CB8FA0E02278681C007013F1 /* NetworkService */,
 				CB8FA0DA22784DD2007013F1 /* Constants */,
 				CB8FA0D522784CD9007013F1 /* Models */,
@@ -172,6 +180,31 @@
 				CB8FA0E42278689C007013F1 /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8FA0E722786F3F007013F1 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FA0E822786F3F007013F1 /* LoadingIndicatorView */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		CB8FA0E822786F3F007013F1 /* LoadingIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FA0E922786F50007013F1 /* LoadingIndicatorView.swift */,
+			);
+			path = LoadingIndicatorView;
+			sourceTree = "<group>";
+		};
+		CB8FA0EB22787087007013F1 /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FA0EC22787098007013F1 /* ImageProvider.swift */,
+				CB8FA0EE227870AC007013F1 /* ImageDownloader.swift */,
+			);
+			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,10 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8FA0ED22787098007013F1 /* ImageProvider.swift in Sources */,
 				CB8FA0D722784D04007013F1 /* AboutCountry.swift in Sources */,
 				CB8FA0A6227848AC007013F1 /* AppDelegate.swift in Sources */,
 				CB8FA0E222786833007013F1 /* NetworkService.swift in Sources */,
+				CB8FA0EA22786F50007013F1 /* LoadingIndicatorView.swift in Sources */,
 				CB8FA0CF22784BE4007013F1 /* HomeViewModel.swift in Sources */,
+				CB8FA0EF227870AC007013F1 /* ImageDownloader.swift in Sources */,
 				CB8FA0D422784C6B007013F1 /* CustomCellViewModel.swift in Sources */,
 				CB8FA0DC22784DDE007013F1 /* Constants.swift in Sources */,
 				CB8FA0D222784C25007013F1 /* CustomCell.swift in Sources */,
