@@ -31,7 +31,16 @@ struct Constants {
         static let emptyString    = ""
         static let loadingText = "Loading..."
     }
-    
+    //Static image names
+    struct Images {
+        static let thumbnailPlaceholder   = "Thumbnail_Placeholder"
+    }
+    /// Contains custom view width and height
+    struct ViewCustomSizes {
+        static let NoDataAvableViewHeight: CGFloat = 50.0
+        static let NoDataAvableLableHeight: CGFloat = 32.0
+        static let NoDataAvableViewPaddingForBothSide: CGFloat = 50.0
+    }
     ///System Fonts
     struct FontSizes {
         static let systemFont17: CGFloat = 17.0

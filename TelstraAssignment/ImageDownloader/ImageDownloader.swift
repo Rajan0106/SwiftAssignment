@@ -24,13 +24,11 @@ protocol ImageDownloadable {
 }
 
 final class ImageDownloader: ImageDownloadable {
-    
     static let shared = ImageDownloader()
     private init () {}
     
     ///Handles image download
     let imageDownloaderSession: URLSession = {
-        
         let  configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest  = 60.0
         configuration.timeoutIntervalForResource = 60.0
@@ -47,17 +45,14 @@ final class ImageDownloader: ImageDownloadable {
             if let error = error {
                 completionHandler(nil, ImageDownloadError.message(message: error.localizedDescription))
             }
-            
             guard let httpUrlResponse = urlResponse as? HTTPURLResponse else {
                 completionHandler(nil, ImageDownloadError.unknownError)
                 return
             }
-            
             guard let data = data, httpUrlResponse.statusCode == 200 else {
                 completionHandler(nil, ImageDownloadError.requestFailed(statusCode: httpUrlResponse.statusCode, message: HTTPURLResponse.localizedString(forStatusCode: httpUrlResponse.statusCode)))
                 return
             }
-            
             let image = UIImage(data: data)
             completionHandler(image, nil)
             }.resume()

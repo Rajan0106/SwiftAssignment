@@ -59,12 +59,10 @@ final class ImageProvider {
         }
         return nil
     }
-    
     ///It will clear all the images stored in cache
     func clearCache() {
         self.cache.removeAllObjects()
     }
-    
     ///Call this method to download image
     /// - parameter url : url on which network request has to be made.
     private func downloadImageForUrl(_ url: URL) {

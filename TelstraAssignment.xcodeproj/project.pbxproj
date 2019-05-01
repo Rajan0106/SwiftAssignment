@@ -23,6 +23,7 @@
 		CB8FA0EA22786F50007013F1 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0E922786F50007013F1 /* LoadingIndicatorView.swift */; };
 		CB8FA0ED22787098007013F1 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0EC22787098007013F1 /* ImageProvider.swift */; };
 		CB8FA0EF227870AC007013F1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0EE227870AC007013F1 /* ImageDownloader.swift */; };
+		CB8FA0F222797E7E007013F1 /* UIAlertController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0F122797E7E007013F1 /* UIAlertController+Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CB8FA0E922786F50007013F1 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		CB8FA0EC22787098007013F1 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		CB8FA0EE227870AC007013F1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		CB8FA0F122797E7E007013F1 /* UIAlertController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Utility.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		CB8FA0A4227848AC007013F1 /* TelstraAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				CB8FA0F022797E68007013F1 /* Extensions */,
 				CB8FA0EB22787087007013F1 /* ImageDownloader */,
 				CB8FA0E722786F3F007013F1 /* ReusableViews */,
 				CB8FA0E02278681C007013F1 /* NetworkService */,
@@ -205,6 +208,14 @@
 				CB8FA0EE227870AC007013F1 /* ImageDownloader.swift */,
 			);
 			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		CB8FA0F022797E68007013F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FA0F122797E7E007013F1 /* UIAlertController+Utility.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 				CB8FA0EA22786F50007013F1 /* LoadingIndicatorView.swift in Sources */,
 				CB8FA0CF22784BE4007013F1 /* HomeViewModel.swift in Sources */,
 				CB8FA0EF227870AC007013F1 /* ImageDownloader.swift in Sources */,
+				CB8FA0F222797E7E007013F1 /* UIAlertController+Utility.swift in Sources */,
 				CB8FA0D422784C6B007013F1 /* CustomCellViewModel.swift in Sources */,
 				CB8FA0DC22784DDE007013F1 /* Constants.swift in Sources */,
 				CB8FA0D222784C25007013F1 /* CustomCell.swift in Sources */,

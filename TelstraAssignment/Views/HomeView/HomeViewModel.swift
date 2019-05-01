@@ -9,8 +9,37 @@
 import Foundation
 import UIKit
 
+//Handles communication from view Model
+protocol HomeViewModelDelegate: AnyObject {
+    func fetched(country: AboutCountry)
+    func fetchCountryDetailFailedWith(error: HTTPErrorCode)
+}
+
 class HomeViewModel: NSObject {
     var aboutCountry: AboutCountry?
+    weak var delegate: HomeViewModelDelegate?
+    
+    ///It fetches data from server
+    /// - parameter server : The server on which network call will be made. By default it is production server
+    func fetchAboutCountryDetailFromService(_ server: NetworkService = ProductionServer()) {
+        server.loadCountryDetailWithCompletionHandler({ (aboutCountry) in
+            // Succesfull request
+            self.delegate?.fetched(country: aboutCountry)
+        }, onFailure: { error in
+            //failure request
+            self.delegate?.fetchCountryDetailFailedWith(error: error)
+        })
+    }
+    
+    ///Removes any values from list when all properties inside value is nil
+    func removeInfoFromListIfAllPropertiesAreNil() {
+        if let infoList = self.aboutCountry?.infoList {
+            let nonNilInfoList = infoList.filter { ($0.title != nil) ||
+                ($0.description != nil) ||
+                ($0.imageHRef != nil) }
+            self.aboutCountry?.infoList = nonNilInfoList
+        }
+    }
 }
 
 extension HomeViewModel: UITableViewDataSource {
@@ -32,4 +61,3 @@ extension HomeViewModel: UITableViewDataSource {
         return customCell
     }
 }
-
