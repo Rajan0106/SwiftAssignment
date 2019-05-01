@@ -37,6 +37,13 @@ class HomeViewController: UIViewController {
         view.addSubview(noDataAvailableLabel)
         return view
     }()
+    lazy private var refreshControl: UIRefreshControl = {
+        let refreshcCtrl = UIRefreshControl()
+        refreshcCtrl.tintColor = .black
+        refreshcCtrl.attributedTitle = NSAttributedString(string: Constants.AppStrings.pullToRefresh)
+        refreshcCtrl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
+        return refreshcCtrl
+    }()
     // MARK: - View life cycle methods
     override func loadView() {
         super.loadView()
@@ -156,6 +163,7 @@ class HomeViewController: UIViewController {
         self.view.addSubview(listTableView)
         self.view.addSubview(loadingView)
         self.view.addSubview(noDataAvailableView)
+        self.listTableView.addSubview(refreshControl)
     }
     private func setupTableView() {
         listTableView.backgroundColor    = .white
@@ -165,6 +173,15 @@ class HomeViewController: UIViewController {
         listTableView.rowHeight          = UITableView.automaticDimension
         listTableView.estimatedRowHeight = 150
         listTableView.register(CustomCell.self, forCellReuseIdentifier: CustomCell.CellIdentifier)
+    }
+    // MARK: - utilities methods
+    //Stop on successful return from function call
+    func stopRefresher() {
+        refreshControl.endRefreshing()
+    }
+    ///Called when "Refresh Control" is called
+    @objc func refresh(sender: AnyObject) {
+        homeViewModel.fetchAboutCountryDetailFromService()
     }
 }
 
@@ -188,6 +205,8 @@ extension HomeViewController: HomeViewModelDelegate {
         // Hide activity indicator view
         //loadingActivityIndicatorView.isHidden = true
         loadingView.hideLoadingView()
+        // Stop refresh controller
+        stopRefresher()
         if homeViewModel.aboutCountry?.infoList?.isEmpty == false {
             // show table view
             listTableView.isHidden = false
@@ -211,6 +230,8 @@ extension HomeViewController: HomeViewModelDelegate {
         listTableView.isHidden = true
         //show no data available screen
         showNoDataAvailableScreen(true)
+        // Stop refresh controller
+        stopRefresher()
         //Update title, it will make sure that no previous title is being shown.
         self.title = Constants.AppStrings.emptyString
         //updating view model data source, previous value will be retained.
