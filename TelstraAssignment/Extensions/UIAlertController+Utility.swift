@@ -13,7 +13,8 @@ extension UIAlertController {
     // Showing alert with title and message.
     static func showAlertWith(title: String, message: String) -> UIAlertController {
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alertVC.addAction(UIAlertAction(title: Constants.AppStrings.titleOK, style: UIAlertAction.Style.default, handler: nil))
+        let title = Constants.AppStrings.titleOK
+        alertVC.addAction(UIAlertAction(title: title, style: UIAlertAction.Style.default, handler: nil))
         return alertVC
     }
 }

@@ -11,25 +11,21 @@ import UIKit
 
 ///This class handles the download of image and saving it to cache(NSCache) for future use.
 final class ImageProvider {
-    static let DidFinishImageDownload: Notification.Name = Notification.Name(rawValue: "com.Telstra.ImageProvider.didFinishImageDownload")
+    static let DidFinishImageDownload = Notification.Name(rawValue: "com.Telstra.ImageProvider.didFinishImageDownload")
     static let keyDownloadedImage: String                = "com.Telstra.ImageProvider.downloadedImage"
     static let keyDownloadedImageForString: String       = "com.Telstra.ImageProvider.downloadedImageForString"
-    
     static let defaultProvider: ImageProvider = {
         let shared =   ImageProvider()
         return shared
     }()
     // Making private to init makes sure that only one instance exit at any time.
     private init () {}
-    
     // MARK: - Instance variables
     private var requestInProgress: [URL] = [URL]()
     private var totalRequest: [URL] = [URL]()
     static let MaxRequestToBeInProgress: Int = 2
-    
     // MARK: - Cache properties
     private let cache: NSCache = NSCache<NSURL, UIImage>()
-    
     ///Call this method to download image.
     /// It first checks image in cache and if available provides image from the cache,
     /// Otherwise makes network request
@@ -37,7 +33,6 @@ final class ImageProvider {
     /// - parameter urlstring: url on which network request has to be made.
     ///
     /// - returns: Image for specified url string.
-    
     func getImageForURLString(_ urlString: String) -> UIImage? {
         guard let imageUrl = URL(string: urlString) else {
             return nil
@@ -88,7 +83,8 @@ final class ImageProvider {
                 print("Image download failed for url -> \(url.absoluteString)")
             }
             DispatchQueue.main.async {
-                NotificationCenter.default.post(name: ImageProvider.DidFinishImageDownload, object: nil, userInfo: userInfo)
+                let notificationName = ImageProvider.DidFinishImageDownload
+                NotificationCenter.default.post(name: notificationName, object: nil, userInfo: userInfo)
             }
         }
     }

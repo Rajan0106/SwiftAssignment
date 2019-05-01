@@ -24,6 +24,10 @@
 		CB8FA0ED22787098007013F1 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0EC22787098007013F1 /* ImageProvider.swift */; };
 		CB8FA0EF227870AC007013F1 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0EE227870AC007013F1 /* ImageDownloader.swift */; };
 		CB8FA0F222797E7E007013F1 /* UIAlertController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0F122797E7E007013F1 /* UIAlertController+Utility.swift */; };
+		CB8FA0F622799368007013F1 /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = CB8FA0F522799368007013F1 /* MockData.json */; };
+		CB8FA0FB227994A4007013F1 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0FA227994A4007013F1 /* HomeViewModelTests.swift */; };
+		CB8FA0FD227994B5007013F1 /* ImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0FC227994B5007013F1 /* ImageProviderTests.swift */; };
+		CB8FA0FF22799524007013F1 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8FA0FE22799524007013F1 /* TestConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		CB8FA0EC22787098007013F1 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		CB8FA0EE227870AC007013F1 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		CB8FA0F122797E7E007013F1 /* UIAlertController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Utility.swift"; sourceTree = "<group>"; };
+		CB8FA0F522799368007013F1 /* MockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
+		CB8FA0FA227994A4007013F1 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		CB8FA0FC227994B5007013F1 /* ImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProviderTests.swift; sourceTree = "<group>"; };
+		CB8FA0FE22799524007013F1 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		CB8FA0A4227848AC007013F1 /* TelstraAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				CB8FA0F422799349007013F1 /* MockData */,
 				CB8FA0F022797E68007013F1 /* Extensions */,
 				CB8FA0EB22787087007013F1 /* ImageDownloader */,
 				CB8FA0E722786F3F007013F1 /* ReusableViews */,
@@ -120,6 +129,9 @@
 		CB8FA0B9227848AF007013F1 /* TelstraAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB8FA0F82279948A007013F1 /* HomeViewModelTests */,
+				CB8FA0F92279948A007013F1 /* ImageProviderTests */,
+				CB8FA0F72279947D007013F1 /* TestConstants */,
 				CB8FA0BA227848AF007013F1 /* TelstraAssignmentTests.swift */,
 				CB8FA0BC227848AF007013F1 /* Info.plist */,
 			);
@@ -218,6 +230,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CB8FA0F422799349007013F1 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FA0F522799368007013F1 /* MockData.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		CB8FA0F72279947D007013F1 /* TestConstants */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FA0FE22799524007013F1 /* TestConstants.swift */,
+			);
+			path = TestConstants;
+			sourceTree = "<group>";
+		};
+		CB8FA0F82279948A007013F1 /* HomeViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FA0FA227994A4007013F1 /* HomeViewModelTests.swift */,
+			);
+			path = HomeViewModelTests;
+			sourceTree = "<group>";
+		};
+		CB8FA0F92279948A007013F1 /* ImageProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8FA0FC227994B5007013F1 /* ImageProviderTests.swift */,
+			);
+			path = ImageProviderTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +273,7 @@
 				CB8FA09F227848AC007013F1 /* Frameworks */,
 				CB8FA0A0227848AC007013F1 /* Resources */,
 				CB8FA0E6227868B3007013F1 /* ShellScript */,
+				CB8FA0F322798E6B007013F1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -301,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8FA0DF22785202007013F1 /* Main.storyboard in Resources */,
+				CB8FA0F622799368007013F1 /* MockData.json in Resources */,
 				CB8FA0B0227848AF007013F1 /* LaunchScreen.storyboard in Resources */,
 				CB8FA0AD227848AF007013F1 /* Assets.xcassets in Resources */,
 			);
@@ -334,6 +380,23 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		CB8FA0F322798E6B007013F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -361,6 +424,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8FA0BB227848AF007013F1 /* TelstraAssignmentTests.swift in Sources */,
+				CB8FA0FB227994A4007013F1 /* HomeViewModelTests.swift in Sources */,
+				CB8FA0FD227994B5007013F1 /* ImageProviderTests.swift in Sources */,
+				CB8FA0FF22799524007013F1 /* TestConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

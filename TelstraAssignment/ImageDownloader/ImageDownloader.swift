@@ -26,7 +26,6 @@ protocol ImageDownloadable {
 final class ImageDownloader: ImageDownloadable {
     static let shared = ImageDownloader()
     private init () {}
-    
     ///Handles image download
     let imageDownloaderSession: URLSession = {
         let  configuration = URLSessionConfiguration.default
@@ -37,7 +36,6 @@ final class ImageDownloader: ImageDownloadable {
         let session = URLSession(configuration: configuration)
         return session
     }()
-    
     /// downloads image from server
     func downloadImageForUrl(_ url: URL, withCompletionHandler completionHandler:@escaping ImageDownloadCompletionHandler) -> Swift.Void {
         self.imageDownloaderSession.dataTask(with: url) { (data, urlResponse, error) in
@@ -50,7 +48,8 @@ final class ImageDownloader: ImageDownloadable {
                 return
             }
             guard let data = data, httpUrlResponse.statusCode == 200 else {
-                completionHandler(nil, ImageDownloadError.requestFailed(statusCode: httpUrlResponse.statusCode, message: HTTPURLResponse.localizedString(forStatusCode: httpUrlResponse.statusCode)))
+                let message = HTTPURLResponse.localizedString(forStatusCode: httpUrlResponse.statusCode)
+                completionHandler(nil, ImageDownloadError.requestFailed(statusCode: httpUrlResponse.statusCode, message: message))
                 return
             }
             let image = UIImage(data: data)

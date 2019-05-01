@@ -20,7 +20,6 @@ struct AboutComponent: Information, Decodable {
     var title: String?
     var description: String?
     var imageHRef: String?
-    
     enum CodingKeys: String, CodingKey {
         case title
         case description
@@ -32,7 +31,6 @@ struct AboutComponent: Information, Decodable {
 struct AboutCountry: Decodable {
     var title: String
     var infoList: [AboutComponent]?
-    
     enum CodingKeys: String, CodingKey {
         case title
         case infoList = "rows"

@@ -7,18 +7,18 @@
 //
 
 import Foundation
-
-import Foundation
 import UIKit
 
 ///It will keep all constant belongs to Application
 struct Constants {
-    
+    //MockData file name
+    static let mockDataFileName = "MockData"
+    //Json Extension String
+    static let jsonExtensionString = "json"
     ///It will Keep all the URL's consumed in the Application
     struct URL {
         static let fetchDetailsEndPoint = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
     }
-    
     ///It will keep all the Strings used in the Application.
     struct AppStrings {
         static let titleOK      = "OK"

@@ -18,7 +18,6 @@ protocol HomeViewModelDelegate: AnyObject {
 class HomeViewModel: NSObject {
     var aboutCountry: AboutCountry?
     weak var delegate: HomeViewModelDelegate?
-    
     ///It fetches data from server
     /// - parameter server : The server on which network call will be made. By default it is production server
     func fetchAboutCountryDetailFromService(_ server: NetworkService = ProductionServer()) {
@@ -30,7 +29,6 @@ class HomeViewModel: NSObject {
             self.delegate?.fetchCountryDetailFailedWith(error: error)
         })
     }
-    
     ///Removes any values from list when all properties inside value is nil
     func removeInfoFromListIfAllPropertiesAreNil() {
         if let infoList = self.aboutCountry?.infoList {
@@ -43,11 +41,9 @@ class HomeViewModel: NSObject {
 }
 
 extension HomeViewModel: UITableViewDataSource {
-    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.aboutCountry?.infoList?.count ?? 0
     }
-    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let customCell = tableView.dequeueReusableCell(withIdentifier: CustomCell.CellIdentifier, for: indexPath) as?  CustomCell else {
             return UITableViewCell()

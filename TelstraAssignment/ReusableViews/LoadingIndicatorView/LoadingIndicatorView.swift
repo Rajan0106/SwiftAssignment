@@ -23,7 +23,6 @@ class LoadingIndicatorView: UIView {
         lbl.textColor     = .black
         return lbl
     }()
-    
     // Createing activity indicator, which is shown while image is getting downloaded.
     lazy private var activityIndicator: UIActivityIndicatorView = {
         let activityIndicatorView = UIActivityIndicatorView()
@@ -32,7 +31,6 @@ class LoadingIndicatorView: UIView {
         activityIndicatorView.color = .purple
         return activityIndicatorView
     }()
-    
     //creates vertical stack view
     lazy private var verticalStackView: UIStackView = {
         let vsv = UIStackView(arrangedSubviews: [activityIndicator, loadingLabel])
@@ -42,7 +40,6 @@ class LoadingIndicatorView: UIView {
         addSubview(vsv)
         return vsv
     }()
-    
     //Setting up default view
     private func setupView() {
         self.loadingLabel.text = loadingLabelText
@@ -50,7 +47,6 @@ class LoadingIndicatorView: UIView {
         backgroundColor = .lightGray
         backgroundColor = UIColor.black.withAlphaComponent(0.25)
     }
-    
     //Sets all the constraint of cell UI component
     private func setupLayoutConstraints() {
         // Vertical Stack view constraint
@@ -62,7 +58,6 @@ class LoadingIndicatorView: UIView {
             verticalStackView.bottomAnchor.constraint(equalTo: bottomAnchor)
             ])
     }
-    
     //overriding designated initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -70,7 +65,6 @@ class LoadingIndicatorView: UIView {
         setupLayoutConstraints()
         setupView()
     }
-    
     //convenience initializer
     convenience init (title: String) {
         //default height for view
@@ -79,13 +73,11 @@ class LoadingIndicatorView: UIView {
         loadingLabelText = title
         setupView()
     }
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         //setting up layoutconstraints
         setupLayoutConstraints()
     }
-    
     ///shows activity indicator
     ///@param withLabel : either show activity indicator with loading text or not.
     func showLoadingView(withLabel: Bool) {
@@ -93,7 +85,6 @@ class LoadingIndicatorView: UIView {
         loadingLabel.isHidden = !withLabel
         activityIndicator.startAnimating()
     }
-    
     ///stop activity indicator view and removes from superview.
     func hideLoadingView() {
         activityIndicator.stopAnimating()

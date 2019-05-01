@@ -11,12 +11,12 @@ import UIKit
 class HomeViewController: UIViewController {
     private var listTableView = UITableView()
     private var loadingView = LoadingIndicatorView(title: Constants.AppStrings.loadingText)
-    
     //It contains data which needs to shown on UI. Also, It initialize network request to download the data from server.
     var homeViewModel = HomeViewModel()
-    
     lazy private var noDataAvailableLabel: UILabel = {
-        var labelFrame  = CGRect(x: 0, y: 0, width: self.view.frame.size.width - Constants.ViewCustomSizes.NoDataAvableViewPaddingForBothSide, height: Constants.ViewCustomSizes.NoDataAvableLableHeight)
+        let paddingX = Constants.ViewCustomSizes.NoDataAvableViewPaddingForBothSide
+        let height = Constants.ViewCustomSizes.NoDataAvableLableHeight
+        var labelFrame  = CGRect(x: 0, y: 0, width: self.view.frame.size.width - paddingX, height: height)
         let lbl         = UILabel(frame: labelFrame)
         lbl.font        = UIFont.systemFont(ofSize: Constants.FontSizes.systemFont18)
         lbl.textAlignment = .center
@@ -25,11 +25,12 @@ class HomeViewController: UIViewController {
         lbl.text          = Constants.AppStrings.noDataAvailableMessage
         return lbl
     }()
-    
     //It is shown when we don't get data from server.
     lazy private var noDataAvailableView: UIView = {
         let width = self.view.frame.size.width
-        let frame = CGRect(x: 0, y: 0, width: width - Constants.ViewCustomSizes.NoDataAvableViewPaddingForBothSide, height: Constants.ViewCustomSizes.NoDataAvableViewHeight)
+        let paddingX = Constants.ViewCustomSizes.NoDataAvableViewPaddingForBothSide
+        let height = Constants.ViewCustomSizes.NoDataAvableViewHeight
+        let frame = CGRect(x: 0, y: 0, width: width - paddingX, height: height)
         let view  = UIView(frame: frame)
         view.backgroundColor = .red
         view.isHidden        = true
@@ -44,7 +45,6 @@ class HomeViewController: UIViewController {
         //Setting up layout constraint
         setupLayoutConstraints()
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -56,7 +56,6 @@ class HomeViewController: UIViewController {
         addObserverToSelfForNotification()
         view.bringSubviewToFront(loadingView)
     }
-    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -68,7 +67,6 @@ class HomeViewController: UIViewController {
             let userInfo    = notification.userInfo
             let urlString   = userInfo?[ImageProvider.keyDownloadedImageForString] as? String
             let downloadedImage = userInfo?[ImageProvider.keyDownloadedImage] as? UIImage
-            
             if  let unwrappedImage = downloadedImage,
                 let unwrappedUrlString = urlString {
                 self.didFinishDownloadingImage(unwrappedImage, forUrlString: unwrappedUrlString)
@@ -79,7 +77,6 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    
     private func didFailedImageDownloading(forUrlString urlString: String) {
         for cell in self.listTableView.visibleCells {
             if  let customCell = cell as? CustomCell,
@@ -105,7 +102,7 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    //MARK: - Private methods
+    // MARK: - Private methods
     private func addObserverToSelfForNotification() {
         self.regiesterForNotificationName(ImageProvider.DidFinishImageDownload)
     }
@@ -143,12 +140,10 @@ class HomeViewController: UIViewController {
             loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
             ])
     }
-    
     private func initializeDataSource() {
         showLoadingIndicatorView(true)
         homeViewModel.fetchAboutCountryDetailFromService()
     }
-    
     private func  showLoadingIndicatorView(_ show: Bool) {
         if show == true {
             loadingView.showLoadingView(withLabel: true)
@@ -156,14 +151,12 @@ class HomeViewController: UIViewController {
             loadingView.hideLoadingView()
         }
     }
-    
     private func addSubviewsToSelfView() {
         //adding  views to viewcontroller's view
         self.view.addSubview(listTableView)
         self.view.addSubview(loadingView)
         self.view.addSubview(noDataAvailableView)
     }
-   
     private func setupTableView() {
         listTableView.backgroundColor    = .white
         listTableView.cellLayoutMarginsFollowReadableWidth = false
@@ -200,7 +193,6 @@ extension HomeViewController: HomeViewModelDelegate {
             listTableView.isHidden = false
             listTableView.reloadData()
             showNoDataAvailableScreen(false)
-            
         } else {
             listTableView.isHidden = true
             showNoDataAvailableScreen(true)
@@ -210,7 +202,8 @@ extension HomeViewController: HomeViewModelDelegate {
     /// - parameter error : The network error object
     func fetchCountryDetailFailedWith(error: HTTPErrorCode) {
         //showing  alert
-        let alertVC = UIAlertController.showAlertWith(title: Constants.AppStrings.titleError, message: error.localizedDescription)
+        let title = Constants.AppStrings.titleError
+        let alertVC = UIAlertController.showAlertWith(title: title, message: error.localizedDescription)
         present(alertVC, animated: true, completion: nil)
         // hidding loading indicator view
         loadingView.hideLoadingView()
@@ -224,4 +217,3 @@ extension HomeViewController: HomeViewModelDelegate {
         self.homeViewModel.aboutCountry = nil
     }
 }
-
