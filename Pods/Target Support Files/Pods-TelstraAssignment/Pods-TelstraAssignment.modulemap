@@ -1,0 +1,6 @@
+framework module Pods_TelstraAssignment {
+  umbrella header "Pods-TelstraAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}

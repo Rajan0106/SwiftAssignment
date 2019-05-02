@@ -15,9 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Since we removed the Main Storyboard : setting the initial view controller as Root View
         window = UIWindow()
         window?.makeKeyAndVisible()
-        let homeViewController = HomeViewController()
-        let rootViewController = UINavigationController(rootViewController: homeViewController)
+        let viewController = HomeViewController()
+        let rootViewController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = rootViewController
+        
+        //Calling Fabric Manager to initialize Fabric library
+        FabricManager.initializeFabric()
         return true
     }
 

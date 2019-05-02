@@ -1,0 +1,25 @@
+PODS:
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Fabric (1.9.0)
+  - ReachabilitySwift (4.3.0)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - ReachabilitySwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+
+PODFILE CHECKSUM: cecb5b8b4740d07c70082d7b124add019a720282
+
+COCOAPODS: 1.5.3

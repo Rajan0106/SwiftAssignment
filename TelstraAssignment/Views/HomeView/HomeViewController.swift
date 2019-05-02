@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics //Remove
 
 class HomeViewController: UIViewController {
     private var listTableView = UITableView()
@@ -52,17 +53,22 @@ class HomeViewController: UIViewController {
         //Setting up layout constraint
         setupLayoutConstraints()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupTableView()
         homeViewModel.delegate = self
+        // Device Offline check
+        showOfflineAlertIfRequired()
+        ReachabilityManager.sharedInstance.networkManagerDelegate = self
         //initializing view model data source
         initializeDataSource()
         //Adding self to listen notifications
         addObserverToSelfForNotification()
         view.bringSubviewToFront(loadingView)
     }
+
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -174,6 +180,16 @@ class HomeViewController: UIViewController {
         listTableView.estimatedRowHeight = 150
         listTableView.register(CustomCell.self, forCellReuseIdentifier: CustomCell.CellIdentifier)
     }
+    private func showOfflineAlertIfRequired() {
+        ReachabilityManager.isUnreachable {[weak self] _ in
+            guard let strongSelf = self else { return }
+            strongSelf.deviceOfflineMessage()
+        }
+    }
+    private func deviceOfflineMessage() {
+        let alertVC = UIAlertController.showAlertWith(title: Constants.AppStrings.offlineTitle, message: Constants.AppStrings.offlineMessage)
+        self.present(alertVC, animated: true, completion: nil)
+    }
     // MARK: - utilities methods
     //Stop on successful return from function call
     func stopRefresher() {
@@ -183,9 +199,7 @@ class HomeViewController: UIViewController {
     @objc func refresh(sender: AnyObject) {
         homeViewModel.fetchAboutCountryDetailFromService()
     }
-}
-
-extension HomeViewController {
+    ///Call this method to show no data available view.
     func showNoDataAvailableScreen(_ show: Bool) {
         self.noDataAvailableView.isHidden = !show
     }
@@ -236,5 +250,24 @@ extension HomeViewController: HomeViewModelDelegate {
         self.title = Constants.AppStrings.emptyString
         //updating view model data source, previous value will be retained.
         self.homeViewModel.aboutCountry = nil
+    }
+}
+
+extension HomeViewController: ReachabilityManagerProtocol {
+    func didChangeNetworkStatus(_ notification: Notification) {
+        ReachabilityManager.isUnreachable { [weak self] _  in
+            guard let strongSelf = self else { return }
+            strongSelf.deviceOfflineMessage()
+        }
+        ReachabilityManager.isReachable { _ in
+            //update datasource from server if not fetched yet.
+            if self.homeViewModel.aboutCountry == nil {
+                self.showNoDataAvailableScreen(false)
+                self.initializeDataSource()
+            } else {
+                //reloading table view will initialize download of images if not downloaded yet
+                self.listTableView.reloadData()
+            }
+        }
     }
 }

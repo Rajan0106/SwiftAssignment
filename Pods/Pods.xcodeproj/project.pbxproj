@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19CEEE1054AC3F234EE5D4DE2CBB79BD /* Pods-TelstraAssignmentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D7817161E665ABB6BF403277517B56 /* Pods-TelstraAssignmentTests-dummy.m */; };
+		2BEBA8D4A17200BB28509FB53333FCF0 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59990F3A77CC5FB6E4164C3DA53A2469 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35B32A6CF137A4A5E152C97193158E7A /* Pods-TelstraAssignment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 276759C577A837735C790A7F460C7AF8 /* Pods-TelstraAssignment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		764A8464129BFFF61E26052B19A64A19 /* Pods-TelstraAssignment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1769393E4AAE7CDEE944EEE56AE900 /* Pods-TelstraAssignment-dummy.m */; };
+		808B2B071A3397A0AD6FB1CFCDB6B67A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C855FAB1934BE23AB6C74FD805CF15EC /* Foundation.framework */; };
+		83A14C05AA4908F2EC80FA70CF112B4F /* Pods-TelstraAssignmentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A1D68603F86283583BFDC233A8541B /* Pods-TelstraAssignmentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98A1517BCE1AC1652C0AD627D1B24B17 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D160BE696B1142FE4597F4DC0E8FE0 /* Reachability.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D070C8A92907A4E6602ED5DF08194E45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C855FAB1934BE23AB6C74FD805CF15EC /* Foundation.framework */; };
+		D34FD76B7BE8642326B2C465D966F375 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D649D360D2EE74FB1B074604CB9B3A /* SystemConfiguration.framework */; };
+		E88CDA50B90AADD2BCBFB84F93572ABD /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A6E9E78EB52F829DCFD0059180BAE3 /* ReachabilitySwift-dummy.m */; };
+		EC320FC4EE673D47B0F901D21C4890CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C855FAB1934BE23AB6C74FD805CF15EC /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A2335A124420130600889CD8CD1BCED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2842B3CC45231A95CACDFB12BDEE3FD5;
+			remoteInfo = ReachabilitySwift;
+		};
+		AB2E15A21BCAE42C0DAAC6C61E719B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3258ECC635A99F4AD96DDFBFF1563443;
+			remoteInfo = "Pods-TelstraAssignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04A99C3A59D6767B051F1AD6DEF74211 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		0748A22469B04E56B479F7B5A1C7A85D /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		0AE09CB8C742AA659D794ADDA4866C22 /* Pods-TelstraAssignment-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelstraAssignment-frameworks.sh"; sourceTree = "<group>"; };
+		0F421B53FFAA102D397732D7AC2487E0 /* Pods-TelstraAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelstraAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		11D160BE696B1142FE4597F4DC0E8FE0 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		1699CFA399EEADBAE923BAFEBB3B2E90 /* Pods-TelstraAssignment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TelstraAssignment.modulemap"; sourceTree = "<group>"; };
+		1D1769393E4AAE7CDEE944EEE56AE900 /* Pods-TelstraAssignment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TelstraAssignment-dummy.m"; sourceTree = "<group>"; };
+		22EAF535B1E4C9F7A853ADBB3FEE8153 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		276759C577A837735C790A7F460C7AF8 /* Pods-TelstraAssignment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelstraAssignment-umbrella.h"; sourceTree = "<group>"; };
+		2CF39A0223694A307FA3DBF4FD0F4B94 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		30D7817161E665ABB6BF403277517B56 /* Pods-TelstraAssignmentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TelstraAssignmentTests-dummy.m"; sourceTree = "<group>"; };
+		3B7CECB4A00137FAD656073813C30F61 /* Pods-TelstraAssignment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TelstraAssignment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CFFB769F201194D87FF3BD3C20AA38A /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		3F2FA3C82592846DD8130AE806F5D9C1 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		40ACADF7F2951875403B894D16C6E75F /* Pods-TelstraAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelstraAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		466ADABBFC645FECFAFDBC33CCDD0FA1 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		4980D65CFD087BE43E8F6659DDD57777 /* Pods-TelstraAssignmentTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelstraAssignmentTests-resources.sh"; sourceTree = "<group>"; };
+		59990F3A77CC5FB6E4164C3DA53A2469 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		59D27368C82E6D49C2BA11204FFE2912 /* Pods-TelstraAssignmentTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelstraAssignmentTests-frameworks.sh"; sourceTree = "<group>"; };
+		5CA9D69C5B6AA94DE7A59BE06C17BC3A /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		6B947E35603E6030332C56C45EFB8EE3 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		716B537CE3C5AF7F389167C5B1E8CD39 /* Pods_TelstraAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TelstraAssignment.framework; path = "Pods-TelstraAssignment.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77849512A725D881752CB7AE785420BB /* Pods-TelstraAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelstraAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		90E12CA43631A33830AB1D188DEFC2A0 /* Pods-TelstraAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TelstraAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B37B55C95609CC1A57C77730C6AE3C5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		A01EE5ED59AC80BCAF1D69F8D8DDF3A3 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		A1249A5F45AC018578F645C5A8D73E43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14E5831DCFD764E5BC95F055A79B1C1 /* Pods-TelstraAssignmentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TelstraAssignmentTests.modulemap"; sourceTree = "<group>"; };
+		AE802B05F8F3CD19F94DBC658A136C3A /* Pods-TelstraAssignmentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TelstraAssignmentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B0D649D360D2EE74FB1B074604CB9B3A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		B88D47D18B96D333A3F508ECA7957A64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE231B0A28E3B18E36CFE37021A2E073 /* Pods_TelstraAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TelstraAssignmentTests.framework; path = "Pods-TelstraAssignmentTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C855FAB1934BE23AB6C74FD805CF15EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD9286A0EC6F7F63D0A8EA71471B5078 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		D2A6E9E78EB52F829DCFD0059180BAE3 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		D4A1D68603F86283583BFDC233A8541B /* Pods-TelstraAssignmentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TelstraAssignmentTests-umbrella.h"; sourceTree = "<group>"; };
+		D94249DE2C0A796B85D05F2A75A2DD10 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		DB73E9535C771403385B1D4B9633662D /* Pods-TelstraAssignment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TelstraAssignment-acknowledgements.plist"; sourceTree = "<group>"; };
+		DBD0EB342B7B61617091ED669B0ACDB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEAC1A8B6B94BE8CD0A7DE32ACE83CF5 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		E2B7E4BD58F788C4C18BB3148E19CFC9 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F775789043AA9F4949B5D2FF657EDD0E /* Pods-TelstraAssignmentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TelstraAssignmentTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD10AC2AD0106730D618316F15FE11D2 /* Pods-TelstraAssignment-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TelstraAssignment-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F71F125274B3FF876EE0E4DFB33620A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC320FC4EE673D47B0F901D21C4890CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8194DF693D94E23BD0ABC71364309407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D070C8A92907A4E6602ED5DF08194E45 /* Foundation.framework in Frameworks */,
+				D34FD76B7BE8642326B2C465D966F375 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80CDAE55E2279C4BA297E5CEF7F2B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808B2B071A3397A0AD6FB1CFCDB6B67A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41C100D5778DE887CA43507E10499F33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1249A5F45AC018578F645C5A8D73E43 /* Info.plist */,
+				6B947E35603E6030332C56C45EFB8EE3 /* ReachabilitySwift.modulemap */,
+				0748A22469B04E56B479F7B5A1C7A85D /* ReachabilitySwift.xcconfig */,
+				D2A6E9E78EB52F829DCFD0059180BAE3 /* ReachabilitySwift-dummy.m */,
+				A01EE5ED59AC80BCAF1D69F8D8DDF3A3 /* ReachabilitySwift-prefix.pch */,
+				59990F3A77CC5FB6E4164C3DA53A2469 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBA67BC332D8D9159ADDB94BE3DA4568 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56BC59D60A630D294A0E52B20E0CA8BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B37B55C95609CC1A57C77730C6AE3C5 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BE0AA3856F88D6BA4D996C435D28EA4 /* Pods-TelstraAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				B88D47D18B96D333A3F508ECA7957A64 /* Info.plist */,
+				1699CFA399EEADBAE923BAFEBB3B2E90 /* Pods-TelstraAssignment.modulemap */,
+				3B7CECB4A00137FAD656073813C30F61 /* Pods-TelstraAssignment-acknowledgements.markdown */,
+				DB73E9535C771403385B1D4B9633662D /* Pods-TelstraAssignment-acknowledgements.plist */,
+				1D1769393E4AAE7CDEE944EEE56AE900 /* Pods-TelstraAssignment-dummy.m */,
+				0AE09CB8C742AA659D794ADDA4866C22 /* Pods-TelstraAssignment-frameworks.sh */,
+				FD10AC2AD0106730D618316F15FE11D2 /* Pods-TelstraAssignment-resources.sh */,
+				276759C577A837735C790A7F460C7AF8 /* Pods-TelstraAssignment-umbrella.h */,
+				77849512A725D881752CB7AE785420BB /* Pods-TelstraAssignment.debug.xcconfig */,
+				40ACADF7F2951875403B894D16C6E75F /* Pods-TelstraAssignment.release.xcconfig */,
+			);
+			name = "Pods-TelstraAssignment";
+			path = "Target Support Files/Pods-TelstraAssignment";
+			sourceTree = "<group>";
+		};
+		5C0B1BEE4BBAB4F4B1E4F72C99C45481 /* Pods-TelstraAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBD0EB342B7B61617091ED669B0ACDB4 /* Info.plist */,
+				A14E5831DCFD764E5BC95F055A79B1C1 /* Pods-TelstraAssignmentTests.modulemap */,
+				AE802B05F8F3CD19F94DBC658A136C3A /* Pods-TelstraAssignmentTests-acknowledgements.markdown */,
+				F775789043AA9F4949B5D2FF657EDD0E /* Pods-TelstraAssignmentTests-acknowledgements.plist */,
+				30D7817161E665ABB6BF403277517B56 /* Pods-TelstraAssignmentTests-dummy.m */,
+				59D27368C82E6D49C2BA11204FFE2912 /* Pods-TelstraAssignmentTests-frameworks.sh */,
+				4980D65CFD087BE43E8F6659DDD57777 /* Pods-TelstraAssignmentTests-resources.sh */,
+				D4A1D68603F86283583BFDC233A8541B /* Pods-TelstraAssignmentTests-umbrella.h */,
+				90E12CA43631A33830AB1D188DEFC2A0 /* Pods-TelstraAssignmentTests.debug.xcconfig */,
+				0F421B53FFAA102D397732D7AC2487E0 /* Pods-TelstraAssignmentTests.release.xcconfig */,
+			);
+			name = "Pods-TelstraAssignmentTests";
+			path = "Target Support Files/Pods-TelstraAssignmentTests";
+			sourceTree = "<group>";
+		};
+		6DBA989086D4EDC46876E2E8F10625C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CF39A0223694A307FA3DBF4FD0F4B94 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		783744DF16DA4B579A72209A362F4697 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC1A8B6B94BE8CD0A7DE32ACE83CF5 /* ANSCompatibility.h */,
+				3CFFB769F201194D87FF3BD3C20AA38A /* Answers.h */,
+				3F2FA3C82592846DD8130AE806F5D9C1 /* CLSAttributes.h */,
+				CD9286A0EC6F7F63D0A8EA71471B5078 /* CLSLogging.h */,
+				5CA9D69C5B6AA94DE7A59BE06C17BC3A /* CLSReport.h */,
+				466ADABBFC645FECFAFDBC33CCDD0FA1 /* CLSStackFrame.h */,
+				22EAF535B1E4C9F7A853ADBB3FEE8153 /* Crashlytics.h */,
+				56BC59D60A630D294A0E52B20E0CA8BE /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				CD53892E389C7F9153BD61A301A132C5 /* Pods */,
+				E661A04557AB95FE6CDA31B379AB709B /* Products */,
+				F4B8A89B7F807D2EA507D67F643EC48C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CBA67BC332D8D9159ADDB94BE3DA4568 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C855FAB1934BE23AB6C74FD805CF15EC /* Foundation.framework */,
+				B0D649D360D2EE74FB1B074604CB9B3A /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CD53892E389C7F9153BD61A301A132C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				783744DF16DA4B579A72209A362F4697 /* Crashlytics */,
+				E073D3D6D501EFA4CC63DEC0AE9E01FB /* Fabric */,
+				DABE516AA4BCB3C7648B72E594288D03 /* ReachabilitySwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DABE516AA4BCB3C7648B72E594288D03 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				11D160BE696B1142FE4597F4DC0E8FE0 /* Reachability.swift */,
+				41C100D5778DE887CA43507E10499F33 /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		E073D3D6D501EFA4CC63DEC0AE9E01FB /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				04A99C3A59D6767B051F1AD6DEF74211 /* FABAttributes.h */,
+				D94249DE2C0A796B85D05F2A75A2DD10 /* Fabric.h */,
+				6DBA989086D4EDC46876E2E8F10625C3 /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		E661A04557AB95FE6CDA31B379AB709B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				716B537CE3C5AF7F389167C5B1E8CD39 /* Pods_TelstraAssignment.framework */,
+				BE231B0A28E3B18E36CFE37021A2E073 /* Pods_TelstraAssignmentTests.framework */,
+				E2B7E4BD58F788C4C18BB3148E19CFC9 /* Reachability.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B8A89B7F807D2EA507D67F643EC48C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BE0AA3856F88D6BA4D996C435D28EA4 /* Pods-TelstraAssignment */,
+				5C0B1BEE4BBAB4F4B1E4F72C99C45481 /* Pods-TelstraAssignmentTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4AD9E365935B59A9F6387707DA53CEC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEBA8D4A17200BB28509FB53333FCF0 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989CC3BCEB00AC88A19AC193D76AFFFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B32A6CF137A4A5E152C97193158E7A /* Pods-TelstraAssignment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9A20906923791D905BA61E9A45D45E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A14C05AA4908F2EC80FA70CF112B4F /* Pods-TelstraAssignmentTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2842B3CC45231A95CACDFB12BDEE3FD5 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60206FA4F193AE3B73577F832ECADD6 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				4AD9E365935B59A9F6387707DA53CEC0 /* Headers */,
+				F792502AB579022B96FD3281A2181282 /* Sources */,
+				8194DF693D94E23BD0ABC71364309407 /* Frameworks */,
+				5783A3A62D2EFDE4F9F267BC7C319E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = E2B7E4BD58F788C4C18BB3148E19CFC9 /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3258ECC635A99F4AD96DDFBFF1563443 /* Pods-TelstraAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FFC3EAD248F695D328984E1527F8E79 /* Build configuration list for PBXNativeTarget "Pods-TelstraAssignment" */;
+			buildPhases = (
+				989CC3BCEB00AC88A19AC193D76AFFFF /* Headers */,
+				D3DBA68667FC730211800A98C0A12220 /* Sources */,
+				5F71F125274B3FF876EE0E4DFB33620A /* Frameworks */,
+				FA2D90E1C59B682F4254004D7B07FDEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69BCD0D4E32075D48B904B487DA568A3 /* PBXTargetDependency */,
+			);
+			name = "Pods-TelstraAssignment";
+			productName = "Pods-TelstraAssignment";
+			productReference = 716B537CE3C5AF7F389167C5B1E8CD39 /* Pods_TelstraAssignment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		647072339A3F208096EC7F5913AD5FB8 /* Pods-TelstraAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD4309E0D953CFBADC8EA6B943E837B8 /* Build configuration list for PBXNativeTarget "Pods-TelstraAssignmentTests" */;
+			buildPhases = (
+				C9A20906923791D905BA61E9A45D45E1 /* Headers */,
+				C656F5701150D2FE971E8CE6D4C025E8 /* Sources */,
+				F80CDAE55E2279C4BA297E5CEF7F2B94 /* Frameworks */,
+				98DAD62250455F64D462DB0CF59C5B27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6284E495394C134D48B848A9D6A5B129 /* PBXTargetDependency */,
+			);
+			name = "Pods-TelstraAssignmentTests";
+			productName = "Pods-TelstraAssignmentTests";
+			productReference = BE231B0A28E3B18E36CFE37021A2E073 /* Pods_TelstraAssignmentTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E661A04557AB95FE6CDA31B379AB709B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3258ECC635A99F4AD96DDFBFF1563443 /* Pods-TelstraAssignment */,
+				647072339A3F208096EC7F5913AD5FB8 /* Pods-TelstraAssignmentTests */,
+				2842B3CC45231A95CACDFB12BDEE3FD5 /* ReachabilitySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5783A3A62D2EFDE4F9F267BC7C319E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98DAD62250455F64D462DB0CF59C5B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2D90E1C59B682F4254004D7B07FDEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C656F5701150D2FE971E8CE6D4C025E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CEEE1054AC3F234EE5D4DE2CBB79BD /* Pods-TelstraAssignmentTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DBA68667FC730211800A98C0A12220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A8464129BFFF61E26052B19A64A19 /* Pods-TelstraAssignment-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F792502AB579022B96FD3281A2181282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A1517BCE1AC1652C0AD627D1B24B17 /* Reachability.swift in Sources */,
+				E88CDA50B90AADD2BCBFB84F93572ABD /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6284E495394C134D48B848A9D6A5B129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TelstraAssignment";
+			target = 3258ECC635A99F4AD96DDFBFF1563443 /* Pods-TelstraAssignment */;
+			targetProxy = AB2E15A21BCAE42C0DAAC6C61E719B3E /* PBXContainerItemProxy */;
+		};
+		69BCD0D4E32075D48B904B487DA568A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 2842B3CC45231A95CACDFB12BDEE3FD5 /* ReachabilitySwift */;
+			targetProxy = 0A2335A124420130600889CD8CD1BCED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B5B00CC4C43420EB7836EA03D6FA9DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40ACADF7F2951875403B894D16C6E75F /* Pods-TelstraAssignment.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelstraAssignment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TelstraAssignment/Pods-TelstraAssignment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7148D62232226FE3506E2849A593BE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E12CA43631A33830AB1D188DEFC2A0 /* Pods-TelstraAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelstraAssignmentTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TelstraAssignmentTests/Pods-TelstraAssignmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79BF5122E37A3E8714370346EDA8D863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77849512A725D881752CB7AE785420BB /* Pods-TelstraAssignment.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelstraAssignment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TelstraAssignment/Pods-TelstraAssignment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DDFA5FA8D4131BFD96E5E26F3672644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9F223F38C586E7916640BC18E1BEAFF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0748A22469B04E56B479F7B5A1C7A85D /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5BC1CAAA1CAF72200DD7C447510150F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F421B53FFAA102D397732D7AC2487E0 /* Pods-TelstraAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TelstraAssignmentTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TelstraAssignmentTests/Pods-TelstraAssignmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0B4E3B7EE3BA9ACE5F009281C739949 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0748A22469B04E56B479F7B5A1C7A85D /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5F759C82752B2EB010DB3CD3D69707C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DDFA5FA8D4131BFD96E5E26F3672644 /* Debug */,
+				D5F759C82752B2EB010DB3CD3D69707C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FFC3EAD248F695D328984E1527F8E79 /* Build configuration list for PBXNativeTarget "Pods-TelstraAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BF5122E37A3E8714370346EDA8D863 /* Debug */,
+				3B5B00CC4C43420EB7836EA03D6FA9DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60206FA4F193AE3B73577F832ECADD6 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B4E3B7EE3BA9ACE5F009281C739949 /* Debug */,
+				9F223F38C586E7916640BC18E1BEAFF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD4309E0D953CFBADC8EA6B943E837B8 /* Build configuration list for PBXNativeTarget "Pods-TelstraAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7148D62232226FE3506E2849A593BE2C /* Debug */,
+				C5BC1CAAA1CAF72200DD7C447510150F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
