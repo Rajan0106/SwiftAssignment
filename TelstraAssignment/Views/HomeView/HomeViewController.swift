@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  TelstraAssignment
 //
 //  Created by m-666346 on 30/04/19.
@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import Crashlytics //Remove
 
+/// HomeViewController class handles all  user intraction and rendering of user data.
+/// It also observes network status changes and render UI accordingly.
 class HomeViewController: UIViewController {
     private var listTableView = UITableView()
     private var loadingView = LoadingIndicatorView(title: Constants.AppStrings.loadingText)

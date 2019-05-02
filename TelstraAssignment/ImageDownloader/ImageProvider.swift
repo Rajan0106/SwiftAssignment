@@ -11,7 +11,8 @@ import UIKit
 
 ///This class handles the download of image and saving it to cache(NSCache) for future use.
 final class ImageProvider {
-    static let DidFinishImageDownload = Notification.Name(rawValue: "com.Telstra.ImageProvider.didFinishImageDownload")
+    
+    static let DidFinishImageDownload: Notification.Name = Notification.Name(rawValue: "com.Telstra.ImageProvider.didFinishImageDownload")
     static let keyDownloadedImage: String                = "com.Telstra.ImageProvider.downloadedImage"
     static let keyDownloadedImageForString: String       = "com.Telstra.ImageProvider.downloadedImageForString"
     static let defaultProvider: ImageProvider = {
@@ -83,8 +84,7 @@ final class ImageProvider {
                 print("Image download failed for url -> \(url.absoluteString)")
             }
             DispatchQueue.main.async {
-                let notificationName = ImageProvider.DidFinishImageDownload
-                NotificationCenter.default.post(name: notificationName, object: nil, userInfo: userInfo)
+                NotificationCenter.default.post(name: ImageProvider.DidFinishImageDownload, object: nil, userInfo: userInfo)
             }
         }
     }
